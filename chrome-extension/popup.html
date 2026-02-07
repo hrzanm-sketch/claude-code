@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Extension</h1>
+      <p class="subtitle">Your personal browser assistant</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-value" id="tab-count">0</span>
+        <span class="stat-label">Open Tabs</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="visit-count">0</span>
+        <span class="stat-label">Pages Visited</span>
+      </div>
+    </section>
+
+    <section class="current-page">
+      <h2>Current Page</h2>
+      <p id="page-title" class="page-info">Loading...</p>
+      <p id="page-url" class="page-url">Loading...</p>
+    </section>
+
+    <section class="quick-notes">
+      <h2>Quick Notes</h2>
+      <textarea id="notes" placeholder="Write your notes here..."></textarea>
+      <button id="save-notes" class="btn">Save Note</button>
+      <p id="save-status" class="save-status"></p>
+    </section>
+
+    <footer>
+      <p>v1.0.0</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
